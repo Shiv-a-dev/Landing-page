@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    background-color: #f8fafc;
+}
+
+/* Header */
+header {
+    background-color: #1f2937;
+    color: #f9faf8;
+    padding: 1.25rem 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+nav {
+    display: flex;
+    gap: 1.75rem;
+}
+
+nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.75;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1f2937;
+    color: #f9faf8;
+    padding: 5rem 2rem;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    line-height: 1.05;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #e5e7eb;
+    max-width: 620px;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.image-placeholder {
+    background-color: #334155;
+    padding: 7rem 2rem;
+    text-align: center;
+    color: #cbd5e1;
+    border-radius: 1rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #3882f6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2566c7;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #1f2937;
+    border: 2px solid #1f2937;
+}
+
+.btn-secondary:hover {
+    background-color: #f1f5f9;
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: #1f2937;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    text-align: center;
+    
+}
+
+.feature-box {
+    width: 100%;
+    height: 200px;
+    border: 3px solid #4a90e2;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Testimonial Section */
+.testimonial {
+    background-color: #e5e7eb;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.testimonial blockquote {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial p {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.testimonial cite {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    color: #1f2937;
+    margin-top: 1rem;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #4a90e2;
+    color: white;
+    padding: 3rem 2rem;
+    margin: 4rem 2rem;
+    border-radius: 8px;
+}
+
+.cta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cta-content {
+    flex: 1;
+}
+
+.cta-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.cta-content p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-container .btn-secondary {
+    white-space: nowrap;
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        gap: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .features h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
